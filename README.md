@@ -1,6 +1,8 @@
 Performance optimized SQL-Datebase to import millions of Active Directory records.
 One feature is, that you can collect historical-data every day because an import of 3.000.000 records takes only 8 minutes.
 
+Tested with Microsoft SQL-Server!
+
 1.) execute create_table.sql
 
 2.) execute ad_group.pl
