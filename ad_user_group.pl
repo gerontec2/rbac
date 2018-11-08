@@ -8,7 +8,7 @@ my $ts1 = localtime(time());
 my $filename = 'd:/tmp/ad_CSVDE1.csv';
 my $filename2 = 'd:/tmp/ad_CSVDE2.csv';
 my $maxl =0;
-my @ret = `C:/Windows/System32/CSVDE -s DCMUCA07.allianzde.rootdom.net -f $filename -j . -n -r (objectclass=person) -l DN,useraccountcontrol,memberOf,mail,department,company,allianz-OrgGroup`;
+my @ret = `C:/Windows/System32/CSVDE -s youradserver.net -f $filename -j . -n -r (objectclass=person) -l DN,useraccountcontrol,memberOf,mail,department,company,allianz-OrgGroup`;
 foreach(@ret) {
  if (/\d+ entries.+/ ) { print $&; }
 }
