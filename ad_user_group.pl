@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use Text::ParseWords;
 use DBI;
-my $host = 'SM017010';
+my $host = 'my_windows_server';
 my $db = 'DS1';
 my $dbh = DBI->connect("dbi:ODBC:Driver={SQL Server};Server=$host;Database=$db;Trusted_Connection=True;") || die "err: $DBI::errstr\n";
 my $ts1 = localtime(time());
