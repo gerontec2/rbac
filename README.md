@@ -5,7 +5,9 @@ One feature is, that you can collect historical-data every day because an import
 
 2.) execute ad_group.pl
 
-3.) select * from ad_user_group;
+3.) select * from dbo.ad_user_group;
+4.) SELECT * FROM dbo.ad_group_grant;
+5.) SELECT * FROM dbo.ad_group_revoke;
 
 Read also:
 https://support.microsoft.com/de-de/help/305144/how-to-use-the-useraccountcontrol-flags-to-manipulate-user-account-pro
